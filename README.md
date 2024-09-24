@@ -1,8 +1,8 @@
 Image Processing Pipeline
 =========================
 <p align="center">
-  <img src="src/image/A_Lenna.png" alt="A Lenna Image">
-  <img src="src/image/A_Final.png" alt="A Final Image">
+  <img src="src/image/A_Lenna.png" alt="A Lenna Image" width="45%" />
+  <img src="src/image/A_Final.png" alt="A Final Image" width="45%" />
 </p>
 
 This project is a Java-based implementation designed to apply a series of image processing techniques to a given image. It utilizes the power of various algorithms and filters to process and enhance images.
