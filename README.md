@@ -1,6 +1,8 @@
 Image Processing Pipeline
 =========================
 
+![A Final Image](src/image/A_Final.png)
+
 This project is a Java-based implementation designed to apply a series of image processing techniques to a given image. It utilizes the power of various algorithms and filters to process and enhance images.
 
 ## Overview
