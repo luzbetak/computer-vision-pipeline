@@ -1,5 +1,5 @@
-Image Processing Pipeline
-=========================
+Computer Vision: Image Processing Pipeline
+==========================================
 <p align="center">
   <img src="src/image/A_Lenna.png" alt="A Lenna Image" width="45%" />
   <img src="src/image/A_Final.png" alt="A Final Image" width="45%" />
