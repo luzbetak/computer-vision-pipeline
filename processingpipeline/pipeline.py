@@ -81,8 +81,8 @@ class ProcessingPipeline:
 
 def run_default_pipeline() -> None:
     config = PipelineConfig(
-        input_path=Path("src/image/A_Lenna.png"),
-        output_path=Path("src/image/A_Final.png"),
+        input_path=Path("src/image/1-Lenna.png"),
+        output_path=Path("src/image/2-Final.png"),
     )
     pipeline = ProcessingPipeline(config)
     pipeline.run()
