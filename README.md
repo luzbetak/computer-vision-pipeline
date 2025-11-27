@@ -1,45 +1,36 @@
-Computer Vision: Image Processing Pipeline
-==========================================
-<p align="center">
-  <img src="src/image/A_Lenna.png" alt="A Lenna Image" width="45%" />
-  <img src="src/image/A_Final.png" alt="A Final Image" width="45%" />
-</p>
+# Computer Vision Pipeline (Python)
 
-This project is a Java-based implementation designed to apply a series of image processing techniques to a given image. It utilizes the power of various algorithms and filters to process and enhance images.
+This repository rewrites the original Java-based computer vision pipeline in Python using NumPy and Pillow.
+The pipeline executes the following stages on a sample image:
 
-## Overview
+1. Percentile-based histogram stretching
+2. Reflection padding
+3. Median filtering
+4. Gaussian blur
+5. Sobel magnitude and direction calculation
+6. Otsu binarization
+7. Basic statistics for key outputs
 
-### Main Components
+Sample input and generated outputs live in `src/image/`.
 
-1. **Main**: The driver class that orchestrates the various steps in the image processing pipeline.
-2. **Gaussian2D**: Implements the Gaussian 2D filter or related operations.
-3. **Percentile**: Provides methods to calculate percentiles.
-4. **Reflection**: Handles operations related to reflection transformations.
-5. **Statistics**: Contains statistical functions or methods.
-6. **OtsuBinarize**: Implements the Otsu binarization method.
-7. **Sobel**: Provides the Sobel edge detection filter or related operations.
-8. **MedianFilter**: Implements the median filtering method.
+## Getting started
 
-### Main Functionality
+1. Create a virtual environment (optional but recommended):
+   ```bash
+   python -m venv .venv
+   source .venv/bin/activate
+   ```
+2. Install dependencies:
+   ```bash
+   pip install -r requirements.txt
+   ```
+3. Run the pipeline:
+   ```bash
+   python main.py
+   ```
 
-The pipeline processes an image through various stages:
-- **Percentile Calculation**: This stage likely helps in thresholding or normalization.
-- **Reflection Transformation**: The image is subjected to reflection transformations.
-- (Other stages would be described based on the full content of the `Main.java` file and other related files.)
+The default run reads `src/image/A_Lenna.png` and writes intermediate artifacts along with the final binarized image to `src/image/`.
 
-## Execution
+## Customizing the pipeline
 
-To run the processing pipeline:
-
-(Note: Execution instructions should be added here based on the project's build and run requirements.)
-
-## Input and Output
-
-- **Input Image**: The default image is "A_Lenna.png", located in the `src/image` directory.
-- **Output Image**: The processed image is saved as "A_Final.png" in the `src/image` directory.
-
-## Dependencies
-
-Ensure you have the required libraries and dependencies to run Java applications that utilize the BufferedImage class for image handling.
-
-
+The pipeline configuration lives in `processingpipeline/pipeline.py`. Update the `PipelineConfig` values or instantiate `ProcessingPipeline` directly for different inputs, padding sizes, Gaussian parameters, or percentile cutoffs.
